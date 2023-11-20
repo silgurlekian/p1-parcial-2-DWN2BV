@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carrito de Compras</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cepante</h1>
+        <img src="imagenes/logo.png" alt="Logo Cepante">
+    </header>
+
+    <div id="filtros" class="filtros">
+        <button onclick="filtrarPorCategoria('Tinto')">Tinto</button>
+        <button onclick="filtrarPorCategoria('Blanco')">Blanco</button>
+        <button onclick="filtrarPorCategoria('Rosado')">Rosado</button>
+        <button onclick="filtrarPorCategoria('Todos')">Todos</button>
+    </div>
+
+    <div class="container">
+        <div id="listaProductos" class="productos"></div>
+    </div>
+
+    <div id="modalDetalleProducto" class="modal">
+        <div id="modalDetalleProductoContent" class="modal-content"></div>
+    </div>
+
+    <div id="modalCarrito" class="modal">
+        <div id="modalCarritoContent" class="modal-content">
+            <span class="close" onclick="cerrarModal('modalCarrito')">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="contenidoCarrito"></div>
+            <p id="detalleCantidad"></p>
+            <p id="detalleMontoTotal"></p>
+            <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        </div>
+    </div>
+</body>
+
+</html>

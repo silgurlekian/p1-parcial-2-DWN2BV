@@ -1,0 +1,151 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    display: none;
+}
+
+header img {
+    margin: 20px auto;
+    display: block;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.filtros {
+    background-color: #59010b;
+    padding: 10px;
+    text-align: center;
+}
+
+.filtros button {
+    background-color: #eeb22d;
+    color: #59010b;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.filtros button:hover {
+    background-color: #59010b;
+    color: #ffffff;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.productos > div {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 28%;
+}
+
+.productos h3,
+.modal h2 {
+    text-align: center;
+    color: #59010b;
+    font-size: 1.3rem;
+    min-height: 50px;
+}
+
+.productos img {
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+.productos p.descripcion {
+    line-height: 25px;
+    min-height: 160px;
+}
+
+.modal p.descripcion {
+    line-height: 25px;
+    text-align: left;
+}
+
+.productos p.precio,
+.modal p.precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.modal p.precio {
+    text-align: left;
+}
+
+.modal img {
+    float: left;
+}
+
+button {
+    background-color: #59010b;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 15px;
+}
+
+button:hover {
+    background-color: #eeb22d;
+    color: #59010b;
+}
+
+/* Estilos de los modales */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    margin: 5% auto;
+    width: 60%;
+    min-height: 400px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos del carrito */
+#modalCarritoContent {
+    text-align: center;
+}
+
+#contenidoCarrito {
+    text-align: left;
+}
